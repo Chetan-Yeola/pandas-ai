@@ -47,7 +47,7 @@ from pandasai.llm.openai import OpenAI
 llm = OpenAI(api_token="YOUR_API_TOKEN")
 
 pandas_ai = PandasAI(llm, conversational=False)
-pandas_ai(df, prompt='Which are the 5 happiest countries?')
+pandas_ai.run(df, prompt='Which are the 5 happiest countries?')
 ```
 
 The above code will return the following:
